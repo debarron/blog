@@ -1,6 +1,6 @@
 ---
 title: "Checking the NBA calendar as a web scrapping exercice"
-date: 2022-04-20
+date: 2022-04-12
 tags: [dev, python, web-scrapping]
 excerpt: "This is a cool way to start coding in Python"
 ---
