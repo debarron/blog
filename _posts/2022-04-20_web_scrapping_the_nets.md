@@ -6,21 +6,48 @@ category: dev
 
 I've always enjoyed playing and watching basketball, nature pointed me to the sport 
 (I'm 1.9m, something like 6'2"). 
-But I miss the NBA games broadcast everytime, and by the time I realized the game has
-already finish. 
+But I keep missing the NBA game broadcasts everytime, and by the time I realized this 
+the game has already finish. 
 So, I decided to put matters into my own hands and avoid setting up alarms and go for a
 different software solution. That, and I needed a good hook for this post. 
-Then, TL-DR, we're building a web-scrapping script with Python to pull the game's calendar
-from the NBA web page.
+So, TL-DR version *I built a web-scrapping script in Python to go and pull 
+the games' calendar from the NBA official web site*.
 
-I assume that we have basic knowledge in Python, and HTML. Otherwise, you can always find
-the great [Derek Banas in Youtube](https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw),
-he's an amaizing bootstrap
+
+## Before we continue
+If you are following this post but have no Python coding experience or knwoledge, please go 
+and visit the G.O.A.T. [Derek Banas in Youtube](https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw).
+Here are some videos that'll help you get started: 
 * [Python Tutorial](https://youtu.be/H1elmMBnykA)
 * [HTML Tutorial](https://youtu.be/Ggh_y-33Eso)
 
 
-## Why do we need this?
+## How I tackle this problem
+In recap, I needed the game callendar from the NBA official web site.
+Fortunately for me, NBA has an clear and friendly page to get this info.
+So I visited the [NBA Official game schedule page](https://www.nba.com/schedule) and got
+a feeling of what's there.
+
+I realized we can look at the **CALENDAR** option to choose the month, also we can
+select a specific **TEAM** from the league. 
+Other option that we can choose is **BROADCAST REGION**, and if you live in Mexico
+(like I do) you'll be very interested.
+
+Now, I chose to monitor all the broadcasts of **Brooklyn Nets** games for next month in
+Mexico.
+After I picked **May, Brooklyn Nets**, and **Mexico** from all the options in the web site
+we formed a new URL `https://www.nba.com/schedule/nets?cal=May&region=22`.
+This tells us how we can communicate with this web site, and we can talk about that some
+other time.
+So, what I'll do next is take this URL with me and write a Python script that will
+download all the HTML information from the web site, parse it, and get the game schedule.
+
+
+## Let's code it
+
+
+
+
 Any of these ring a bell? 
 A straight forward way to show that you understand how web-pages are organized.
 You want to automatize some tasks related to visiting, or checking a web page's content
