@@ -1,7 +1,8 @@
 ---
-layout: default
 title: "Checking the NBA calendar as a web scrapping exercice"
-category: dev
+date: 2022-04-20
+tags: [dev, python, web-scrapping]
+excerpt: "This is a cool way to start coding in Python"
 ---
 
 I've always enjoyed playing and watching basketball, nature pointed me to the sport 
