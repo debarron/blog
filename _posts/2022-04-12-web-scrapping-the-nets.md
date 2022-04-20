@@ -45,7 +45,15 @@ download all the HTML information from the web site, parse it, and get the game 
 
 
 ## Let's code it
+In order to code this challenge we need a couple of libraries. And another thing to point
+out is that I'll be using Python3.
+```python
+pip3 install bs4
+pip3 install requests
+```
 
+These libraries will help when we want to communicate with a server with HTTP requests (requests)
+and when we want to parse and process an HTML document (bs4).
 
 
 
